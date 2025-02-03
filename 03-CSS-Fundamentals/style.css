@@ -34,7 +34,10 @@ p {
 }
 
 /* it will select all p inside the footer (DESCENDANT SELECTOR) */
-footer p {
+/* footer p {
+  font-size: 16px;
+} */
+#copyright {
   font-size: 16px;
 }
 
@@ -42,6 +45,24 @@ li {
   font-size: 20px;
 }
 
-article header p {
+/* article header p {
   font-style: italic;
+} */
+#author {
+  /* Using id -> #idname */
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  /* Using class -> .classname */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style-type: none;
+} */
+.related {
+  list-style-type: none;
 }
