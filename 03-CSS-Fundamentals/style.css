@@ -14,6 +14,12 @@ body {
   /* border-top: solid 10px blue; tHE BORDER does not have inheritance */
 }
 
+.container {
+  width: 700px;
+  /*? Center Horizontally */
+  margin: 0 auto;
+}
+
 article {
   margin-bottom: 60px;
 }
