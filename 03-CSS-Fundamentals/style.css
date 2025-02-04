@@ -1,16 +1,26 @@
-body {
-  /* background-color: blue; */
+* {
+  /* Will apply to all the elements */
 }
 
-h1,
+body {
+  /* background-color: blue; */
+
+  color: #444444; /* This will not work because the specifity is the same already applied below*/
+  /*Inehrited valuesa are the once who have the lowest priority  */
+  font-family: sans-serif;
+
+  /* border-top: solid 10px blue; tHE BORDER does not have inheritance */
+}
+
+/* 
 h2,
 h3,
 h4,
 p,
 li {
-  font-family: sans-serif;
-  color: #444444;
+   color: red; removing this will make the color property in the body to 
 }
+ */
 
 h1,
 h2,
@@ -152,4 +162,8 @@ a:active {
 footer p {
   /* Use sparingly */
   color: green !important;
+}
+
+nav {
+  font-size: 18px;
 }
