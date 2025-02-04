@@ -106,6 +106,31 @@ li:last-child {
   color: red;
 } */
 
-article p:last-child {
+/*!Misconception: this won't work  */
+article p:first-child {
   color: red;
+}
+
+/* Styling links (LVHA)  */
+/* targets all a tag with href*  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: lightgray; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy;
+}
+
+/* while clicking the link */
+a:active {
+  background-color: black;
+  font-style: italic;
 }
