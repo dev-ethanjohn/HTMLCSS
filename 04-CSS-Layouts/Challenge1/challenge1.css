@@ -1,0 +1,122 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.4;
+}
+
+/* PRODUCT */
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+  width: 30%;
+}
+
+.product {
+  border: solid 5px black;
+  width: 60%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.product::after {
+  content: "SALE";
+  position: absolute;
+  background-color: red;
+  padding: 4px 16px;
+  color: white;
+  font-weight: bold;
+  top: -20px;
+  left: -20px;
+}
+
+.product-title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.item-description {
+  clear: both;
+}
+/* PRODUCT INFO */
+.item-price {
+  font-size: 24px;
+  float: left;
+}
+
+.item-description {
+  margin-bottom: 12px;
+}
+
+.discount {
+  font-size: 12px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
+}
+
+/* LVHA */
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+.product-details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.product-details-list li {
+  list-style: square;
+  margin-bottom: 12px;
+  margin-left: 20px;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-top: 5px solid black;
+}
+
+.add-to-cart-btn:hover {
+  /* filter: invert(1);  */
+  color: black;
+  background-color: white;
+}
+
+.product-checkout-wrapper {
+  width: 240px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.product-details-wrapper {
+  width: 240px;
+  float: right;
+}
