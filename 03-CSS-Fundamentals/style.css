@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* PAGE SECTIONS */
 body {
   /* background-color: blue; */
 
@@ -36,7 +37,7 @@ nav {
 
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
   /* ?Total height is (content height + total padding height) */
 }
 
@@ -54,16 +55,6 @@ aside {
 .post-header {
   margin-bottom: 40px;
 }
-
-/* 
-h2,
-h3,
-h4,
-p,
-li {
-   color: red; removing this will make the color property in the body to 
-}
- */
 
 h1,
 h2,
@@ -213,4 +204,17 @@ footer p {
 .post-img {
   width: 100%;
   height: auto;
+  /* margin: 20px 100px; */
+}
+
+nav a:link {
+  display: inline-block;
+  background-color: orangered;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+/* this now is an inline block inherited  */
+nav a:link:last-child {
+  margin-right: 0;
 }
