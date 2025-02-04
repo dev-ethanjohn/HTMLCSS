@@ -230,3 +230,31 @@ nav a:link:last-child {
   bottom: 50px;
   right: 50px;
 }
+
+/* ?PSEUDO ELEMENT */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 6px;
+}
+
+/* H3 the first p adjacennt or 1st child will be applied + the pseudo element 1st line to apply */
+/* IF there is an image before the p on the h3, then this will not work */
+/* h3 + p::first-line {
+  color: gray;
+} */
+h2 {
+  position: relative;
+}
+
+h2::after {
+  display: inline-block;
+  color: #444444;
+  content: "TOP";
+  position: absolute;
+  background-color: #ffe70e;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 4px 12px;
+  top: -12px;
+  right: -12px;
+}
