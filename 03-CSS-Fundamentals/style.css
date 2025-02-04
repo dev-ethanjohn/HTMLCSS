@@ -27,8 +27,11 @@ nav {
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
+
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
+  /* ?Total height is (content height + total padding height) */
 }
 
 /* ELEMENT SELETOR */
@@ -39,6 +42,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
+  width: 500px;
 }
 
 .post-header {
@@ -198,4 +202,9 @@ a:active {
 footer p {
   /* Use sparingly */
   color: green !important;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
