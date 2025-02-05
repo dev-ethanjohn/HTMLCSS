@@ -27,7 +27,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -349,20 +349,47 @@ footer {
   margin-bottom: 0;
 }
 
-.row {
+/* Flexbox layout */
+
+/* .row {
   display: flex;
-  /*  not speficiying this alignment will by default make the flex items to stretch like what is happening on the aside ebfore we add the flex-start */
+   not speficiying this alignment will by default make the flex items to stretch like what is happening on the aside ebfore we add the flex-start
   align-items: flex-start;
   gap: 75px;
   margin-bottom: 60px;
 }
 
 article {
-  /* flex: 0, 0, 825px; */
+  flex: 0, 0, 825px;
   flex: 1;
   margin-bottom: 0;
 }
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* ! GRID */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 70px;
+  row-gap: 60px;
+  /* grid-template-rows: 1fr; */
+
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1 / -1;
 }
