@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Flexbox</title>
     <style>
       .el--1 {
@@ -36,10 +37,46 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
+        /* height of flex items depends on the highest height in the container */
+        display: flex;
+        /* align items cross axis - vertically */
+        align-items: center;
+        /* justify the whole content along main axis -horizontal*/
+        justify-content: center;
+        /* gap: 30px; */
+      }
+      .el {
+        /* ?DEFAULTS */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* minimum width of each flex item */
+        /* flex-basis: 100px; */
+        flex: 1;
+        /* flex: 0 0 200px; */
+      }
+
+      .el--1 {
+        align-self: flex-end;
+        /* It will occupy the remaining space */
+        flex-grow: 1;
+      }
+
+      .el--5 {
+        align-self: stretch;
+        /* palced at the last to the right */
+        order: 1;
+        flex-grow: 2;
+      }
+
+      /* language */
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
