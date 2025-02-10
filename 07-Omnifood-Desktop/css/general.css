@@ -78,7 +78,8 @@ body {
   font-weight: 600;
 
   /* put this transition on original state */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -159,11 +160,49 @@ body {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .grid--4-cols {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-v {
   align-items: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-right--sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom--md {
+  margin-bottom: 4.8rem !important;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  /* the same as the current color text */
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/* HELPER CLASSES */
+.center-text {
+  text-align: center;
 }
